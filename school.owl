@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/sabidani/ontologies/2024/2/school"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/sabidani/ontologies/2024/2/school">
+    <Prefix name="" IRI="http://www.semanticweb.org/sabidani/ontologies/2024/2/school/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>School ontologie</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Administrative"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Govt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#House_Keeping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Junior_Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maitenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non_Teaching"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Private"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#School"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Senior_Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Staff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Supporting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Teacher"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#admits"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#employs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#learns"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#teaches"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#joinedON"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#staffID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#studentID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#teach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#international_school"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rick"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tony"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Administrative"/>
+        <Class IRI="#Maitenance"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Administrative"/>
+        <Class IRI="#Non_Teaching"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Govt"/>
+        <Class IRI="#School"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#House_Keeping"/>
+        <Class IRI="#Non_Teaching"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Junior_Student"/>
+        <Class IRI="#Student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maitenance"/>
+        <Class IRI="#Non_Teaching"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non_Teaching"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Private"/>
+        <Class IRI="#School"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Senior_Student"/>
+        <Class IRI="#Student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Supporting"/>
+        <Class IRI="#Non_Teaching"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Teacher"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Staff"/>
+        <Class IRI="#Student"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Teacher"/>
+        <NamedIndividual IRI="#Nat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#School"/>
+        <NamedIndividual IRI="#international_school"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#rick"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teacher"/>
+        <NamedIndividual IRI="#tony"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="#Nat"/>
+        <NamedIndividual IRI="#tony"/>
+    </SameIndividual>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#admits"/>
+        <NamedIndividual IRI="#international_school"/>
+        <NamedIndividual IRI="#rick"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#employs"/>
+        <NamedIndividual IRI="#international_school"/>
+        <NamedIndividual IRI="#tony"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#tony"/>
+        <NamedIndividual IRI="#rick"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#joinedON"/>
+        <NamedIndividual IRI="#rick"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-03T09:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#studentID"/>
+        <NamedIndividual IRI="#rick"/>
+        <Literal>S10001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teach"/>
+        <NamedIndividual IRI="#tony"/>
+        <Literal>Science</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#admits"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#employs"/>
+        <Class IRI="#School"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#learns"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#teaches"/>
+        <Class IRI="#Teacher"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#employs"/>
+        <Class IRI="#Staff"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#learns"/>
+        <Class IRI="#Subject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#teaches"/>
+        <Class IRI="#Subject"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#joinedON"/>
+        <Class IRI="#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#staffID"/>
+        <Class IRI="#Staff"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#teach"/>
+        <Class IRI="#Teacher"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#joinedON"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#staffID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#studentID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#admits</IRI>
+        <Literal>School admits student</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#employs</IRI>
+        <Literal>School staff employs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#learns</IRI>
+        <Literal>Student learns the subject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#teaches</IRI>
+        <Literal>Teacher teaches the subject</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
